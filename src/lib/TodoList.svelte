@@ -17,6 +17,9 @@
             <button on:click={() => removeItem(i)}>X</button>
         </div>
     {/each}
+    {#if !$todos.length}
+        List is empty
+    {/if}
 </div>
 
 <style>
